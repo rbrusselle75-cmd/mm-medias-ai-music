@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MM Medias AI Music</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0f;
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(135deg, #111118, #1c0b18);
+    padding: 45px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #d00045;
+}
+
+.slogan {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 17px;
+}
+
+nav {
+    background: #111116;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e00050;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: radial-gradient(circle at center, #35101f 0%, #0b0b0f 60%);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #bbb;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    border-left: 4px solid #d00045;
+    padding-left: 15px;
+}
+
+.artist {
+    background: #15151c;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.artist h3 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.album {
+    background: #15151c;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.album h3 {
+    color: #fff;
+    margin-top: 0;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-bottom: 1px solid #292930;
+}
+
+.track:last-child {
+    border-bottom: none;
+}
+
+.track button {
+    background: #d00045;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    cursor: pointer;
+}
+
+.track button:hover {
+    background: #ff1764;
+}
+
+.info {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+footer {
+    background: #08080b;
+    text-align: center;
+    padding: 40px 20px;
+    color: #777;
+    border-top: 1px solid #222;
+}
+
+.ai {
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+@media(max-width:700px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .track {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MM <span>MEDIAS</span></div>
+    <div class="slogan">AI MUSIC — L'intelligence rencontre la musique</div>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#artistes">Artistes</a>
+    <a href="#albums">Albums</a>
+    <a href="#apropos">À propos</a>
+</nav>
+
+<div class="hero" id="accueil">
+    <h1>MM Medias AI Music</h1>
+
+    <p>
+        Bienvenue dans l'univers musical de MM Medias AI Music.
+        Découvrez nos artistes, nos albums et nos créations musicales
+        réalisées avec l'aide de l'intelligence artificielle.
+    </p>
+</div>
+
+<section id="artistes">
+
+    <h2 class="section-title">Nos artistes</h2>
+
+    <div class="artist">
+
+        <h3>🖤 Dark Angel</h3>
+
+        <p class="info">
+            Dark Angel évolue dans un univers sombre et puissant,
+            entre Dark Metal, Metal alternatif et ballades mélancoliques.
+        </p>
+
+        <p>
+            <strong>Premier album :</strong>
+            Je n'veux pas
+        </p>
+
+    </div>
+
+</section>
+
+<section id="albums">
+
+    <h2 class="section-title">Albums</h2>
+
+    <div class="album">
+
+        <h3>💿 Dark Angel — Je n'veux pas</h3>
+
+        <p class="info">
+            Album de Dark Metal
+        </p>
+
+        <div class="track">
+            <span>01 — Intro</span>
+            <button onclick="alert('Le fichier audio sera ajouté prochainement.')">
+                ▶ Écouter
+            </button>
+        </div>
+
+        <div class="track">
+            <span>02 — Je n'veux pas</span>
+            <button onclick="alert('Le fichier audio sera ajouté prochainement.')">
+                ▶ Écouter
+            </button>
+        </div>
+
+        <div class="track">
+            <span>03 — Tu m'as trahie</span>
+            <button onclick="alert('Le fichier audio sera ajouté prochainement.')">
+                ▶ Écouter
+            </button>
+        </div>
+
+        <div class="track">
+            <span>04 — Je veux rêver</span>
+            <button onclick="alert('Le fichier audio sera ajouté prochainement.')">
+                ▶ Écouter
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="apropos">
+
+    <h2 class="section-title">À propos</h2>
+
+    <p class="info">
+        MM Medias AI Music est un projet musical consacré à la création
+        et à la diffusion de projets artistiques utilisant les technologies
+        d'intelligence artificielle.
+    </p>
+
+    <p class="info">
+        Les artistes présentés sur ce site sont des projets artistiques
+        développés dans l'univers de MM Medias AI Music.
+    </p>
+
+    <p class="ai">
+        🤖 Certaines créations musicales et certains éléments visuels
+        présents sur ce site sont réalisés avec l'aide d'outils
+        d'intelligence artificielle.
+    </p>
+
+</section>
+
+<footer>
+
+    <strong>MM Medias AI Music</strong>
+
+    <br><br>
+
+    © 2026 MM Medias AI Music
+
+</footer>
+
+</body>
+</html>
