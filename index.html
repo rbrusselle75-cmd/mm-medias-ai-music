@@ -14,21 +14,21 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #0b0b0f;
+    background: #08080c;
     color: #ffffff;
 }
 
 header {
-    background: linear-gradient(135deg, #111118, #1c0b18);
-    padding: 45px 20px;
+    padding: 55px 20px;
     text-align: center;
-    border-bottom: 1px solid #333;
+    background: linear-gradient(135deg, #0c0c12, #260914);
+    border-bottom: 1px solid #292933;
 }
 
 .logo {
-    font-size: 42px;
+    font-size: 44px;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 .logo span {
@@ -36,24 +36,25 @@ header {
 }
 
 .slogan {
-    margin-top: 10px;
-    color: #aaa;
-    font-size: 17px;
+    margin-top: 12px;
+    color: #999;
+    font-size: 16px;
 }
 
 nav {
-    background: #111116;
-    padding: 15px;
-    text-align: center;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 20;
+    padding: 16px;
+    text-align: center;
+    background: rgba(10,10,15,0.96);
+    border-bottom: 1px solid #292933;
 }
 
 nav a {
-    color: white;
+    color: #ddd;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 18px;
     font-weight: bold;
 }
 
@@ -63,121 +64,155 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 70px 20px;
-    background: radial-gradient(circle at center, #35101f 0%, #0b0b0f 60%);
+    padding: 80px 20px;
+    background:
+        radial-gradient(circle at center, #3b1023 0%, #120912 35%, #08080c 70%);
 }
 
 .hero h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
+    font-size: 48px;
+    margin: 0 0 20px;
 }
 
 .hero p {
-    color: #bbb;
-    max-width: 700px;
+    max-width: 750px;
     margin: auto;
-    line-height: 1.7;
+    color: #bbb;
+    line-height: 1.8;
+    font-size: 17px;
 }
 
 section {
     max-width: 1100px;
     margin: auto;
-    padding: 55px 20px;
+    padding: 65px 20px;
 }
 
 .section-title {
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 32px;
     border-left: 4px solid #d00045;
     padding-left: 15px;
+    margin-bottom: 35px;
 }
 
 .artist {
-    background: #15151c;
+    background: #121219;
     padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 30px;
+    border-radius: 14px;
+    border: 1px solid #25252d;
 }
 
 .artist h3 {
-    font-size: 28px;
+    font-size: 30px;
     margin-top: 0;
+}
+
+.info {
+    color: #aaa;
+    line-height: 1.8;
 }
 
 .album {
-    background: #15151c;
-    border-radius: 12px;
-    padding: 25px;
-    margin-top: 20px;
+    background: linear-gradient(145deg, #15151d, #101016);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #292932;
 }
 
-.album h3 {
-    color: #fff;
-    margin-top: 0;
+.album-header {
+    margin-bottom: 30px;
+}
+
+.album-title {
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+.album-subtitle {
+    color: #999;
 }
 
 .track {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 10px;
-    border-bottom: 1px solid #292930;
+    padding: 20px 0;
+    border-bottom: 1px solid #292932;
 }
 
 .track:last-child {
     border-bottom: none;
 }
 
-.track button {
-    background: #d00045;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 18px;
-    cursor: pointer;
+.track-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
-.track button:hover {
+.track-number {
+    color: #d00045;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.track-title {
+    font-weight: bold;
+}
+
+audio {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.download {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 14px;
+    background: #d00045;
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    font-size: 13px;
+}
+
+.download:hover {
     background: #ff1764;
 }
 
-.info {
-    color: #aaa;
-    line-height: 1.7;
+.notice {
+    margin-top: 25px;
+    padding: 18px;
+    border-left: 3px solid #d00045;
+    background: #111118;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 footer {
-    background: #08080b;
     text-align: center;
-    padding: 40px 20px;
-    color: #777;
+    padding: 45px 20px;
+    background: #050507;
     border-top: 1px solid #222;
-}
-
-.ai {
-    color: #aaa;
-    font-size: 13px;
-    margin-top: 15px;
+    color: #777;
 }
 
 @media(max-width:700px) {
+
     .logo {
         font-size: 30px;
     }
 
     .hero h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     nav a {
         display: inline-block;
-        margin: 6px;
+        margin: 7px 9px;
     }
 
-    .track {
-        flex-direction: column;
+    .track-info {
         align-items: flex-start;
-        gap: 10px;
     }
 }
 </style>
@@ -186,30 +221,44 @@ footer {
 <body>
 
 <header>
-    <div class="logo">MM <span>MEDIAS</span></div>
-    <div class="slogan">AI MUSIC — L'intelligence rencontre la musique</div>
+
+    <div class="logo">
+        MM <span>MEDIAS</span>
+    </div>
+
+    <div class="slogan">
+        AI MUSIC — L'intelligence rencontre la musique
+    </div>
+
 </header>
 
 <nav>
+
     <a href="#accueil">Accueil</a>
-    <a href="#artistes">Artistes</a>
-    <a href="#albums">Albums</a>
+    <a href="#artiste">Artiste</a>
+    <a href="#album">Album</a>
     <a href="#apropos">À propos</a>
+
 </nav>
 
 <div class="hero" id="accueil">
+
     <h1>MM Medias AI Music</h1>
 
     <p>
         Bienvenue dans l'univers musical de MM Medias AI Music.
-        Découvrez nos artistes, nos albums et nos créations musicales
+        Découvrez des artistes et des créations musicales originales
         réalisées avec l'aide de l'intelligence artificielle.
     </p>
+
 </div>
 
-<section id="artistes">
 
-    <h2 class="section-title">Nos artistes</h2>
+<section id="artiste">
+
+    <h2 class="section-title">
+        Artiste
+    </h2>
 
     <div class="artist">
 
@@ -220,81 +269,392 @@ footer {
             entre Dark Metal, Metal alternatif et ballades mélancoliques.
         </p>
 
-        <p>
-            <strong>Premier album :</strong>
-            Je n'veux pas
+        <p class="info">
+            Découvrez son premier album :
+            <strong>Je n'veux pas</strong>.
         </p>
 
     </div>
 
 </section>
 
-<section id="albums">
 
-    <h2 class="section-title">Albums</h2>
+<section id="album">
+
+    <h2 class="section-title">
+        Album
+    </h2>
 
     <div class="album">
 
-        <h3>💿 Dark Angel — Je n'veux pas</h3>
+        <div class="album-header">
 
-        <p class="info">
-            Album de Dark Metal
-        </p>
+            <h3 class="album-title">
+                💿 Dark Angel — Je n'veux pas
+            </h3>
 
-        <div class="track">
-            <span>01 — Intro</span>
-            <button onclick="alert('Le fichier audio sera ajouté prochainement.')">
-                ▶ Écouter
-            </button>
+            <div class="album-subtitle">
+                Album — Dark Metal
+            </div>
+
         </div>
 
-        <div class="track">
-            <span>02 — Je n'veux pas</span>
-            <button onclick="alert('Le fichier audio sera ajouté prochainement.')">
-                ▶ Écouter
-            </button>
-        </div>
+
+        <!-- 01 -->
 
         <div class="track">
-            <span>03 — Tu m'as trahie</span>
-            <button onclick="alert('Le fichier audio sera ajouté prochainement.')">
-                ▶ Écouter
-            </button>
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">01</span>
+                    <span class="track-title">Intro</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/01-intro.mp3" type="audio/mpeg">
+                Votre navigateur ne peut pas lire ce fichier audio.
+            </audio>
+
+            <a class="download"
+               href="music/01-intro.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
         </div>
 
+
+        <!-- 02 -->
+
         <div class="track">
-            <span>04 — Je veux rêver</span>
-            <button onclick="alert('Le fichier audio sera ajouté prochainement.')">
-                ▶ Écouter
-            </button>
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">02</span>
+                    <span class="track-title">Je n'veux pas</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/02-je-nveux-pas.mp3" type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/02-je-nveux-pas.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 03 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">03</span>
+                    <span class="track-title">Tu m'as trahie</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/03-tu-mas-trahie.mp3" type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/03-tu-mas-trahie.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 04 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">04</span>
+                    <span class="track-title">Je veux rêver</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/04-je-veux-rever.mp3" type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/04-je-veux-rever.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 05 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">05</span>
+                    <span class="track-title">C'est mieux comme ça</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/05-cest-mieux-comme-ca.mp3" type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/05-cest-mieux-comme-ca.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 06 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">06</span>
+                    <span class="track-title">Pourquoi je changerais ?</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/06-pourquoi-je-changerais.mp3" type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/06-pourquoi-je-changerais.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 07 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">07</span>
+                    <span class="track-title">Glacée</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/07-glacee.mp3" type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/07-glacee.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 08 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">08</span>
+                    <span class="track-title">Tant pis</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/08-tant-pis.mp3" type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/08-tant-pis.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 09 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">09</span>
+                    <span class="track-title">
+                        Qu'est-ce que je fais maintenant ?
+                    </span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/09-quest-ce-que-je-fais-maintenant.mp3"
+                        type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/09-quest-ce-que-je-fais-maintenant.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 10 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">10</span>
+                    <span class="track-title">Le silence</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/10-le-silence.mp3"
+                        type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/10-le-silence.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 11 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">11</span>
+                    <span class="track-title">Loin de ce monde</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/11-loin-de-ce-monde.mp3"
+                        type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/11-loin-de-ce-monde.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <!-- 12 -->
+
+        <div class="track">
+
+            <div class="track-info">
+
+                <div>
+                    <span class="track-number">12</span>
+                    <span class="track-title">Libre</span>
+                </div>
+
+            </div>
+
+            <audio controls preload="none">
+                <source src="music/12-libre.mp3"
+                        type="audio/mpeg">
+            </audio>
+
+            <a class="download"
+               href="music/12-libre.mp3"
+               download>
+                ⬇ Télécharger
+            </a>
+
+        </div>
+
+
+        <div class="notice">
+
+            🤖 Certaines créations musicales et certains éléments
+            visuels présentés sur ce site sont réalisés avec l'aide
+            d'outils d'intelligence artificielle.
+
         </div>
 
     </div>
 
 </section>
 
+
 <section id="apropos">
 
-    <h2 class="section-title">À propos</h2>
+    <h2 class="section-title">
+        À propos
+    </h2>
 
     <p class="info">
-        MM Medias AI Music est un projet musical consacré à la création
-        et à la diffusion de projets artistiques utilisant les technologies
-        d'intelligence artificielle.
+
+        MM Medias AI Music est un projet consacré à la création,
+        à la présentation et à la diffusion de projets musicaux
+        utilisant les technologies d'intelligence artificielle.
+
     </p>
 
     <p class="info">
-        Les artistes présentés sur ce site sont des projets artistiques
-        développés dans l'univers de MM Medias AI Music.
-    </p>
 
-    <p class="ai">
-        🤖 Certaines créations musicales et certains éléments visuels
-        présents sur ce site sont réalisés avec l'aide d'outils
-        d'intelligence artificielle.
+        Le site présente différents artistes et univers musicaux
+        développés dans le cadre de MM Medias AI Music.
+
     </p>
 
 </section>
+
 
 <footer>
 
@@ -305,6 +665,33 @@ footer {
     © 2026 MM Medias AI Music
 
 </footer>
+
+
+<script>
+
+/*
+   Un seul morceau peut être joué à la fois.
+*/
+
+const players = document.querySelectorAll("audio");
+
+players.forEach(player => {
+
+    player.addEventListener("play", () => {
+
+        players.forEach(otherPlayer => {
+
+            if (otherPlayer !== player) {
+                otherPlayer.pause();
+            }
+
+        });
+
+    });
+
+});
+
+</script>
 
 </body>
 </html>
